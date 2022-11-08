@@ -1,0 +1,1059 @@
+# What is LINUX ?
+- Linux is an Open Source Operating System (OS).
+- Linux is a Unix-like open source computer operating system that directly manages hardware and resources of a system such as 
+  CPU, memory and storage and manages the communication between software and hardware.
+
+# Why LINUX ?
+- Linux is for Zero Cost of Entry...as in free.
+- We can install Linux on as many computers as you like without paying a cent for software or server licensing.
+
+# Popular Linux Distributions:
+- Linux has a number of different versions to suit any type of user. This versions are called distributions.
+• Linux Mint
+• Manjaro
+• Debian
+• UBUNTU
+• Antergos
+• Solus
+• Fedora
+• Elementary OS
+• Opensuse
+
+# What is UNIX ?
+- The UNIX is Operating System and it is a set of that act as a link between the computer and the user.
+- The computer program that allocate the system resources and coordinate all the details of the computer's internals is called the 
+  Operating System or KERNEL.
+- Users communicate with the kernel through a program known as SHELL. The shell is a command line interpreter; it translate 
+  commands entered by user and converts them into a language that is understood by the kernel.
+
+# Tips and Tricks
+- You can use the clear command to clear the terminal if it gets filld up with too many commands.
+- TAB can be used to fill up in terminal. For example, you just nees to type "cd Doc" and then TAB and the terminal fills the rest 
+  up and makes it "cd Documents".
+- Ctrl+C can be used to stop any command in terminal safely. If it doesn't stop with that, then Ctrl+Z can be used to force stop it.
+- You can exist from the terminal by using the exist command.
+- You can power off or reboot the computer by using the command "sudo halt" and "sudo reboot".
+
+# •󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•󀪃•
+
+1. USER COMMANDS
+
+󀪃 id - The id command is used to display the user ID (UID) and group ID (GID).
+
+  • Syntax: $ id -> enter 
+	-> uid=1000(nitin) gid=1000(nitin) groups=1000(nitin) ...
+
+#󀪃 useradd - The useradd command is used to add or remove a user on a Linux server.
+
+  • Syntax: $ useradd aarohi -> enter
+	-> Permission denied.
+
+#󀪃 passwd - The passwd command is used to create and change the password for a user.
+
+  • Syntax: $ passwd -> enter
+	-> Changing password for nitin
+	-> Crrent password:
+	-> New password:
+	-> Retype new passwod:
+	-> Password changed
+ 
+#󀪃 groupadd - The groupadd command is used to create a user group.
+
+  • Syntax: $ groupadd aarohi -> enter
+	-> Permission denied.
+
+#󀪃 su - The su command provides administrative access to another user. In other words, it allows access of the Linux shell to 
+     another user.
+
+  • Syntax: $ su -> enter
+	-> password: 
+	-> qsu: Authentication failure
+	
+○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○
+
+2. BASIC COMMANDS
+
+#󀪃 who - The who command is used to display current logged users in system.
+
+  • Syntax: $ who -> enter
+	(it will not show anything because currently only 1 user is logged in the system) 
+
+󀪃 whoami - The whoami is used to display only user name
+
+  • Syntax: $ whoami -> enter
+	-> nitin
+
+#󀪃 who all - The who all command is used to display logged user and not logged user for specific project.
+
+  • Syntax: $ who all -> enter
+	(it will not show anyhing because currently only 1 user is logged in the system)
+
+󀪃 hostname - The hostname command is used to show system name or host name.
+
+  • Syntax: $ hostname -> enter
+	-> Nitin
+
+󀪃 hostname -i - The hostname -i command is used to show IP address.
+
+  • Syntax: $ hostname -i -> enter
+	-> 127.0.1.1
+
+
+󀪃 whatis - The whatis command is used to display command description.
+
+  • Syntax: $ whatis who -> enter
+	-> who (1)			- show who is logged on
+
+
+󀪃 man - The man command will provide the complete manual related to particular command with syntax and options which to be 
+  used in Linux. 
+
+  • Syntax: $ man <command name> -> enter
+	-> (description of that command)
+
+○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○
+
+3. FILE COMMANDS
+
+󀪃 cat - The cat command is used to create a file, display content of the file, copy the content of one file to another file and more.
+
+  • Syntax: $ cat > First_Linux_File -> enter		# to create file
+	-> Hiii
+	-> My self Nitin Patil
+	-> I'm 26 year old
+	-> Having 3 years of fake experience
+	-> Have a good day
+	(Ctrl+d to escape from command)
+
+  • Syntax: $ cat First_Linux_File -> enter 		# to view file
+	-> Hiii
+	-> My self Nitin Patil
+	-> I'm 26 year old
+	-> Having 3 years of fake experience
+	-> Have a good day	
+
+  • Syntax: $ cat L2 >> L4 -> enter			# copy-pasting without overriding
+  
+  • Syntax: $ cat > L3 -> enter
+	-> Hiii
+	-> We3 Members
+	-> How are you?
+	(ctrl + d)
+
+  • Syntax: $ cat L3 >> L2 -> enter
+	(copy-pasting L3 data into L2 without overriding)
+
+  • Syntax: $ cat L2 -> enter
+
+  • Syntax: $ cat L3 -> enter 
+
+󀪃 tac - The tac command is the reverse of cat command, as its name specified. It displays the file content in reverse order 
+  ( from the last line ).
+
+  • Syntax: $ tac First_Linux_File -> enter
+	-> Have a good day
+	-> Having 3 years of fake experience
+	-> I'm 26 year old
+	-> My self Nitin Patil
+  	-> Hiii
+
+󀪃 touch - The touch command is used to create empty files. We can create multiple empty files by executing it once.
+
+  • Syntax: $ touch -> enter
+	(it will not show anything because it creates empty file)
+
+  • Syntax: $ ls -> enter
+	-> First_Linux_File	First_Touch_File
+
+󀪃 more - The more command is used to displyay the file content but more towards in case of larger files. It will show content 
+  page by page. 
+
+  • Syntax: $ more First_Linux_File -> enter
+	-> Hiii
+	-> My self Nitin Patil
+	-> I'm 26 year old
+	-> Having 3 years of fake experience
+	-> Have a good day	
+
+
+󀪃 less - The less command is similar to the more command. To show content in a file with 'END' keyword. It is providing the 
+  flexibility to move up and down into the file by using up and down arrow.
+
+  • Syntax: $ less First_Linux_File -> enter
+	-> Hiii
+	-> My self Nitin Patil
+	-> I'm 26 year old
+	-> Having 3 years of fake experience
+	-> Have a good day
+	(press q to exit)
+
+󀪃 cp - The cp command is used to copy a file or directory.
+
+  • Syntax: $ cp First_Linux_File L1	-> enter			# copy-paste one file content to another file
+  
+  • Syntax: $ cat L1 -> enter  
+	-> Hiii
+	-> My self Nitin Patil
+	-> I'm 26 year old
+	-> Having 3 years of fake experience
+	-> Have a good day
+
+󀪃 mv - The mv command is used to move a file or a directory from one location to another location.
+
+  • Syntax: $ mv L1 L2 -> enter			# cut-paste one file content to another
+
+  • Syntax: $ cat L1 -> enter
+	-> No such file or directory
+
+  • Syntax: $ cat L2 -> enter
+	-> Hiii
+	-> My self Nitin Patil
+	-> I'm 26 year old
+	-> Having 3 years of fake experience
+	-> Have a good day
+
+󀪃 head - The head command is used to display the content of a file. It displays the first 10 lins of a file.
+  
+ • Syntax: $ head <filename> -> enter
+
+ • Syntax: $ cat >> L2 -> enter
+	-> Like Attract Like
+	-> Always Think Positive, it works
+	-> Count your blessings
+	-> Show your Gratitude by saying the magic words Thank You
+	-> Always feel greatfull for what you have
+	-> Thinking Positive creates Positive thoughts
+	-> We always emmiting the energy to the surrounding
+
+  • Syntax: $ head L2 -> enter
+	-> Hiii
+	-> My self Nitin Patil
+	-> I'm 26 year old
+	-> Having 3 years of fake experience
+	-> Have a good day
+	-> Like Attract Like
+	-> Always Think Positive, it works
+	-> Count your blessings
+	-> Show your Gratitude by saying the magic words Thank You
+	-> Always feel greatfull for what you have
+
+󀪃 tail - The tail command is used to display last 10 lines of the file content. It is useful for reading the error message.
+
+  • Syntax: $ tail L2 -> enter
+	-> I'm 26 year old
+	-> Having 3 years of fake experience
+	-> Have a good day
+	-> Like Attract Like
+	-> Always Think Positive, it works
+	-> Count your blessings
+	-> Show your Gratitude by saying the magic words Thank You
+	-> Always feel greatfull for what you have	
+	-> Thinking Positive creates Positive thoughts
+	-> We always emmiting the energy to the surrounding
+
+󀪃 rm - The rm command is used to remove the file.
+
+  • Syntax: $ rm First_Touch_File -> enter
+	( shows nothing )
+
+  • Syntax: $ ls -> enter
+	-> First_Linux_File	 First_touch_File	L2
+
+○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○
+
+4. DIRECTORY COMMANDS
+
+󀪃 cd - The cd command is used to change the current directory.
+
+  • Syntax: $ cd -> enter
+	(it will not show anything because we have only one directory)
+
+󀪃 cd .. - This command is used to go back one directory.
+
+  • Syntax: $ cd .. -> enter
+	-> /home $
+
+󀪃 cd ~ - This command is used to go to root directory.
+
+  • Syntax: $ cd ~ -> enter
+
+  • Syntax: $ cd .. -> enter
+	-> /home $
+
+  • Syntax: $ cd ~ -> enter
+	-> $
+
+󀪃 mkdir - The mkdir command is used to create a new directory under any directory.
+
+  • Syntax: $ mkdir D1 -> enter
+	(it will not show anything)
+
+  • Syntax: $ mkdir D11 -> enter  
+	(it will not show anything)
+
+  • Syntax: $ ls -> enter
+	-> D1 (in blue colour)	D11 (in blue colour)		First_Linux_File	First_touch_File	L2	
+
+
+󀪃 rmdir - The rmdir command is used to delete a directory.
+
+  • Syntax: $ rmdir D11 -> enter
+	(it will not show anything)
+
+  • Syntax: $ ls -> enter
+	-> D1 (in blue colour)
+
+  • Syntax: $ rmdir First_touch_File -> enter
+	-> failed to remove 'First_touch_File': Not a directory
+  
+󀪃 pwd - The pwd command is used o display the location of the current working directory.
+
+  • Syntax: $ pwd -> enter
+	-> /home/nitin
+
+󀪃 rm -r - This command is used to remove empty and non-empty directory.
+
+  • Syntax: $ rm -r First_touch_File -> enter
+	(it will not show anything)
+
+  • Syntax: $ ls -> enter
+	-> D1 (in blue colour)	First_Linux_File	L2
+
+○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○
+
+5. UTILITY COMMANDS
+
+󀪃 du - The du command is used to display the used disk space.
+
+  • Syntax: $ du -> enter
+	-> 4		./.landscape
+	-> 4		./D1
+	-> 36	.
+
+  • Syntax: $ du -a -> enter 				# for all
+	-> 4		./First_Linux_File
+	-> 0		./.lanscape/sysinfo.log
+	-> 4		./.lanscape
+	.	
+	.
+	.
+	36
+
+  • Syntax: $ du -a -h -> enter			# for all with size
+	-> 4.0K		./First_Linux_File
+	-> 0		./.lanscape/sysinfo.log
+	-> 4.0K		./.lanscape
+	.
+	.
+	.
+	36K
+
+󀪃 df - The df command is used to display the free disk space.
+  
+  • Syntax: $ df -> enter
+
+  • Syntax: $ df -h -> enter				# for size
+
+󀪃 date - The date command is used to display date, time, time zone and more.
+
+  • Syntax: $ date -> enter
+	-> Wed Aug 31 17:08:46 IST 2022
+
+󀪃 cal - The cal command is used to display the current month's calendar with the current date highlighted.
+
+  • Syntax: $ cal -> enter
+	-> (august month calendar will display here)
+
+  • Syntax: $ cal 1995 -> enter
+	-> (whole 1995 calendar will display here)
+
+  • Syntax: $ cal 11 1995 -> enter
+	-> (november 1995 calendar will display here)
+
+󀪃 wc - The wc command is used to count the lines, words and characters in a file.
+
+  • Syntax: $ wc L2 -> enter
+	-> 12	60	351	L2			# (12 lines, 60 words, 351 characters)
+
+󀪃 wc -l - This command is used to count the lines.
+
+  • Syntax: $ wc -l -> enter
+	(type anything)
+	-> Hiii
+	-> Hello
+	-> How are you ?
+	-> Have a nice day
+	-> Keep Smiling
+	(ctrl + d)
+	5
+
+  • Syntax: $ wc -l L2 -> enter
+	-> 12 L2
+
+󀪃 wc -w - This command is used to count the words.
+
+  • Syntax: $ wc -w -> enter
+	-> Hiii
+	-> Hello
+	-> How are you ?
+	-> Have a nice day
+	-> Keep Smiling
+	(ctrl + d)
+	12
+
+  • Syntax: $ wc -w L2 -> enter
+	-> 60 L2
+
+󀪃 wc -c - This command is used to count the characters.
+
+  • Syntax: $ wc -c -> enter
+	-> Hiii
+	-> Hello
+	-> Take Care
+	(ctrl + d)
+	21
+
+  • Syntax: $ wc -c L2 -> enter
+	-> 351 L2
+
+󀪃 time - The time command is used to display the time to execute a command.
+
+  • Syntax: $ time -> enter
+	-> real	0m0.000s
+	-> user	0m0.000s
+	-> sys	0m0.000s
+
+  • Syntax: $ time date -> enter
+	-> Wed Aug 31 17:54:00 IST 2022
+
+	-> real	0m0.002s
+	-> user	0m0.002s
+	-> sys	0m0.000s
+
+  • Syntax: $ time wc -> enter
+	-> hiii
+	(ctrl + d)
+	->	1	1	5
+
+	-> real	0m4.104s
+	-> user	0m0.002s
+	-> sys	0m0.001s
+
+#󀪃 exit - The exit command is used to exit from the current shell.
+
+  < don't try this command >
+
+  • Syntax: $ exit -> enter
+
+󀪃 clear - The Linux clear command is used to clear the terminal screen.
+
+  • Syntax: $ clear -> enter
+
+○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○
+
+6. FILTER COMMANDS
+
+󀪃 grep - The 'grep' stands for 'global regular expression print' and it is used for searching the content from a file.
+
+  • Syntax: $ grep 'you' L2 -> enter				# fetching the keyword 'you' 
+	-> Count your blessings
+	-> show your Gratitude by saying the magic words Thank You
+	-> always feel greatfull for what you have
+	-> How are you?
+
+  • Syntax: $ grep -i 'you' L2 -> enter			# fetching the keyword 'you' and all posibilities of 'you'
+	-> Count your blessings
+	-> show your Gratitude by saying the magic words Thank You
+	-> always feel greatfull for what you have
+	-> How are you?
+
+  • Syntax: $ grep -i -n 'your' L2 -> enter		# fetching the keyword 'your' with line no.
+	-> 8:Count your blessings
+	-> 9:Show your Gratitude by saying the magic words Thank You
+
+  • Syntax: $ grep -c your L2 -> enter			# count of keyword 'your'
+	-> 2
+
+  • Syntax: $ grep -c -i you L2 -> enter					# count of keyword 'you' and all posibilities of 'you'
+	-> 4
+
+  • Syntax: $ grep -v your L2 -> enter					# excluding the keyword 'your'
+	-> Hiii
+	-> My self Nitin Patil
+	-> I'm 26 year old
+	-> Having 3 years of fake experience
+	-> Have a good day
+	-> Like Attract Like
+	-> Always Think ositive, it works
+	-> Thinking Positive creates Positive thoughts
+	-> We always emmiting the energyy to the surrounding
+	-> Hiii
+	-> We3 Members
+	-> How are you?
+
+  • Syntax: $ grep -v -i you L2 -> enter					# excluding the keyword 'you' and its posibilities
+	-> Hiii
+	-> My self Nitin Patil
+	-> I'm 26 year old
+	-> Having 3 years of fake experience
+	-> Have a good day
+	-> Like Attract Like
+	-> Always Think Positive, it works
+	-> Thinking Positive creates Positive thoughts
+	-> We always emmiting the energy to the surrounding
+	-> Hiii
+	-> We3 Members
+
+  • Syntax: $ grep -v -n your L2 -> enter				# excluding the keyword 'your' wth line no.
+	-> 1:Hiii
+	-> 2:My self Nitin Patil
+	-> 3:I'm 26 year old
+	-> 4:Having 3 years of fake experience
+	-> 5:Have a good day
+	-> 6:Like Attract Like
+	-> 7:Always Think Positive, it works
+	-> 10:Always feel greatfull for what you have
+	-> 11:Thinking Positive creates Positive thoughts
+	-> 12:We always emmiting the energy to the surrounding
+	-> 13:Hiii
+	-> 14:We3 Members
+	-> 15:How are you?
+	-> 16:
+
+  • Syntax: $ grep -r you -> enter				# history of the keyword 'you'
+	-> L4:Count your blessings
+	-> L4:Show your Gratitude by saying the magic words Thank You
+	-> L4:Always feel greatfull for what you have
+	-> L3:How are you?
+	-> L2:Count your blessings
+	-> L2:Show your Gratitude by saying the magic words Thank You
+	-> L2:Always feel greatfull for what you have
+	-> L2:How are you?
+	-> .bashrc:# set variable identifying the chroot yo
+ 		work in (used in the prompt below)
+	-> .bashrc:# You may want to put all your additions into a separate file like
+	-> .bashrc:# enable programmable completion features (you don't need to enable
+
+  • Syntax: $ grep -r your First_Linux_File L2 L4 -> enter		# history of the keyword 'your' with given 3 files
+	-> L2:Count your blessings
+	-> L2:Show your Gratitude by saying the magic words Thank You
+	-> L4:Count your blessings
+	-> L4:Show your Gratitude by saying the magic words Thank You
+
+  • Syntax: $ grep -r -n your -> enter						# with line no.
+	-> L4:8:Count your blessings
+	-> L4:9:Show your Gratitude by saying the magic words Thank You
+	-> L2:8:Count your blessings
+	-> L2:9:Show your Gratitude by saying the magic words Thank You
+	-> .bashrc:100:# You may want to put all your additions into a separate file like
+
+  • Syntax: $ grep your L2 && grep show L2 -> enter
+	-> Count your blessings
+	-> Show your Gratitude by saying the magic words Thank You
+	-> Show your Gratitude by saying the magic words Thank You
+
+  • Syntax: $ grep your L2 && grep -i show L2 -> enter
+
+	-> Count your blessings
+	-> Show your Gratitude by saying the magic words Thank You
+	-> Show your Gratitude by saying the magic words Thank You
+
+  • Syntax: $ grep -i your L2 && grep -i show L2 -> enter
+	-> Count your blessings
+	-> Show your Gratitude by saying the magic words Thank You
+
+  • Syntax: $ grep '^$' L2 -> enter					# shows empty line
+
+  • Syntax: $ grep -n '^$' L2 -> enter				# shows empty line with line no.
+	-> 16:
+
+󀪃 sort - The sort command is to sort the files in alphabetical order.
+
+  • Syntax: $ sort -n <filename>
+
+  • Syntax: $ cat > L5 -> enter
+	-> 5
+	-> 7
+	-> 12
+	-> 2
+	-> 9
+	-> 11
+	-> 1995
+	-> 23
+	-> Nitin
+	-> Ruchita
+	-> Ankita
+	-> Neha
+	-> Jija
+	-> @
+	(ctrl + d)
+
+  • Syntax: $ sort -n L5 -> enter			# for ascending order
+	-> @
+	-> Ankita
+	-> Jija
+	-> Neha
+	-> Nitin
+	-> Ruchita
+	-> 2
+	-> 5
+	-> 7
+	-> 9
+	-> 11
+	-> 12
+	-> 23
+	-> 1995
+
+  • Syntax: $ sort -n -r L5 -> enter			# for descending order
+	-> 1995
+	-> 23
+	-> 12
+	-> 11
+	-> 9
+	-> 7
+	-> 5
+	-> 2
+	-> Ruchita
+	-> Nitin
+	-> Neha
+	-> Jija
+	-> Ankita
+	-> @
+
+󀪃 gzip - The gzip command is used to compress the file and replace the original file by the compressed file having '.gz' extension.
+
+  • Syntax: $ gzip L5 -> enter
+	(it will not show anything)
+
+  • Syntax: $ ls -> enter
+	-> D1	First_Linux_File	L2	L3	L4	L5.gz
+
+󀪃 gunzip - The gunzip command is used to decompress a file.
+
+  • Syntax: $ gunzip L5 -> enter
+	(it will not show anything)
+
+  • Syntax: $ ls -> enter
+	-> D1	First_Linux_File	L2	L3	L4	L5
+
+󀪃 󀪃 zcat - The zcat command is used to display the compressed files.
+
+  • Syntax: $ zcat <filename>
+	
+  • Syntax: $ gzip L3 -> enter
+	(it will not show anything)
+
+  • Syntax: $ ls -> enter
+	-> D1	First_Linux_File	L2	L3.gz	L4	L5L6
+
+  • Syntax: $ zcat L3 -> enter
+	-> Hiii
+	-> How are you?	
+
+#󀪃 󀪃 comm - The comm command is used to compare two files or streams. By default, it displays three columns, first displays 
+  non-matching items of the first file, second indicates the non-matching item of the second file and the third displays the matching items of both files.
+
+  • Syntax: $ comm L2 L5 -> enter
+	        5
+        	7
+	comm: file 2 is not in sorted order
+        	12
+        	2
+        	9
+        	11
+        	1995
+        	23
+	Hiii
+	My self Nitin Patil
+	comm: file 1 is not in sorted order
+	I'm 26 year old
+	Having 3 years of fake experience
+	Have a good day
+	Like Attract Like
+	Always Think Positive, it works
+	Count your blessings
+        	Nitin
+        	Ruchita
+        	Ankita
+        	Neha
+        	Jija
+        	@
+	Show your Gratitude by saying the magic words Thank You
+	Always feel greatfull for what you have
+	Thinking Positive creates Positive thoughts
+	We always emmiting the energy to the surrounding
+	Hiii
+	We3 Members
+	How are you?
+
+○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○
+
+7. PERMISSION COMMANDS
+
+• r - read 
+• w - write 
+• x- execute 
+• u - user 
+• g - group 
+• o - other
+
+
+
+• first off all -> $ ls -l -> enter
+
+󀪃 chmod - The chmod command is used to set the permission for file or directory.
+
+  a) Symbolic -
+
+  * By default 	-> user have permissions • rw
+			-> group have permissions • r
+			-> other have permissions • r
+
+  • Syntax: $ ls -l -> enter
+	total 28
+	drwxr-xr-x 2 nitin nitin 4096 Aug 31 15:10 D1
+	-rw-r--r-- 1 nitin nitin   91 Aug 28 12:07 First_Linux_File
+	-rw-r--r-- 1 nitin nitin  382 Aug 31 18:30 L2
+	-rw-r--r-- 1 nitin nitin   60 Sep  1 21:46 L3
+	-rw-r--r-- 1 nitin nitin  351 Aug 31 18:24 L4
+	-rw-r--r-- 1 nitin nitin   55 Sep  1 17:07 L5
+	-rw-r--r-- 1 nitin nitin  132 Sep  1 20:54 L6
+
+	• -rw-r--r-- 1		-> it is a group of 1 - 3 - 3 - 3 (i.e. if 1 = '-' then it is a file, if 1 = 'd' then it is directory, 3 = user permissions, 3 = group permissions, 3 = other permissions)
+	• -rw-r--r-- 1		-> it is a file,
+						having 'rw-' means user having permission of read and write
+						having 'r--' means group having permission of read only
+						having 'r--' means other having permission of read only
+
+  • Syntax: $ ls -l L3 -> enter
+	-> -rw-r--r-- 1		nitin		nitin		382		Aug	31 	18:30 	L2
+
+  • Syntax: $ chmod u+x,g+wx,o+w L3 -> enter		# giving execute permission to user, write and execute permission to group, write permission to other 
+	(it shows nothing)
+
+  • Syntax: $ ls -l L3 -> enter						# to see the changes
+	->	-rwxrwxrw- 1 nitin nitin 60 Sep  1 21:46 L3
+
+  • Syntax: $ chmod g-x,o-rw L3 ->enter				# removing execute permission from group, removing read and write permission from other
+	(it shows nothing)
+
+  • Syntax: $ ls -l L3 -> enter
+	->	-rwxrw---- 1 nitin nitin 60 Sep  1 21:46 L3
+
+  • Syntax: $ ls -l L4 -> enter
+	->	-rw-r--r-- 1 nitin nitin 351 Aug 31 18:24 L4
+
+  • Syntax: $ chmod u+x,g+wx,o+wx L4 -> enter
+	(it shows nothing)
+
+  • Syntax: $ ls -l L4 -> enter
+	->	-rwxrwxrwx 1 nitin nitin 351 Aug 31 18:24 L4
+
+  • Syntax: $ chmod ugo-rwx L4 -> enter				# removing all permissions from user, group, other
+	(it shows nothing)
+
+  • Syntax: $ ls -l L4 -> enter
+	->	---------- 1 nitin nitin 351 Aug 31 18:24 L4
+
+  • Syntax: $ chmod ugo+rwx L4 -> enter
+	(it shows nothing)
+
+  • Syntax: $ ls -l L4 -> enter						# giving all permissions to user, group, other
+	->	-rwxrwxrwx 1 nitin nitin 351 Aug 31 18:24 L4
+
+  b) Numeric -
+
+  * By default	-> 4 • read		(1st digit is for user)
+			-> 2 • write		(2nd digit is for group)
+			-> 1 • execute		(3rd digit is for other)
+
+  • Syntax: $ chmod 421 L4 -> enter
+	(it shows nothing)
+
+  • Syntax: $ ls -l L4 -> enter
+	->	-r---w---x 1 nitin nitin 351 Aug 31 18:24 L4
+
+  • Syntax: $ chmod 753 L4 -> enter				# (7 = 4+3+1 i.e. read+write+execute, 5 = 4+1 i.e. read+execute, 3 = 2+1 i.e. write+execute)
+	(it shows nothing)
+
+  • Syntax: $ ls -l L4 -> enter
+	->	-rwxr-x-wx 1 nitin nitin 351 Aug 31 18:24 L4
+
+  • Syntax: $ chmod 7 L4 -> enter					# chmod 7 = chmod 007 = user have 0, group have 0, other have read, write, execute permissions
+	(it shows nothing)
+
+  • Syntax: $ ls -l L4 -> enter
+	->	-------rwx 1 nitin nitin 351 Aug 31 18:24 L4
+
+  • Syntax: $ chmod 055 L4 -> enter
+	(it shows nothing)
+
+  • Syntax: $ ls -l L4 -> enter						# chmod 55 = chmod 055 = user have 0, group have read, execute permission, other have read, execute permissions
+	->	----r-xr-x 1 nitin nitin 351 Aug 31 18:24 L4
+
+#󀪃 chown - The chown command is used to change the user ownership. (mostly used in real time)
+
+  • Syntax: $ chown Arohi L6 -> enter
+	-> invalid user: 'Arohi'
+
+  • Syntax: $ chown nitin L6 -> enter
+	(it shows nothing)
+
+#󀪃 chgrp - The chgrp command is used to change the group ownership.
+
+  • Syntax: $ chgrp Arohi L6 -> enter
+	-> invalid group: 'Arohi'
+
+  • Syntax: $ chgrp nitin L6 -> enter
+	(it shows nothing)
+
+○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○
+
+8. Process Commands
+
+󀪃 ps - The ps command gives count of how much processes are going on.
+
+  • Syntax: $ ps -> enter				# mostly used in real time
+	  -> PID TTY          TIME CMD
+    		9 pts/0    00:00:00 bash
+   		97 pts/0    00:00:00 ps
+
+#󀪃 kill - The kill command is used to manually terminate the process or to force stop the process.
+
+  < not working >
+
+  • Syntax: $ kill <pid> -> enter
+
+○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○
+
+9. Acknowledgement Commands
+
+󀪃 sed - The sed command is also known as stream editor. It is used to edit files (temporary) using a regular expression
+
+  • Syntax: $ sed -n 'p' L3 -> enter				# fetching all file data
+	-> Hiii
+	-> We3 Members
+	-> How are you?
+
+  • Syntax: $ sed -n '2p' L3 -> enter				# fetching 2nd line 
+	-> We3 Members
+
+  • Syntax: $ sed -n '2p;5p;7p' L2 -> enter		# fetching 2nd, 5th, 7th line
+	-> My self Nitin Patil
+	-> Have a good day
+	-> Always Think Positive, it works
+
+  • Syntax: $ sed -n '1,5p' L2 -> enter			# fetching 1 to 5th line
+	-> Hiii
+	-> My self Nitin Patil
+	-> I'm 26 year old
+	-> Having 3 years of fake experience
+	-> Have a good day
+
+  • Syntax: $ sed -n '3p;5p' L2 -> enter			# fetching 3rd and 5th line
+	-> I'm 26 year old
+	-> Have a good day
+	
+  • Syntax: $ sed '2d' L3 -> enter				# temporarily delete 2nd line
+	-> Hiii
+	-> How are you?
+	
+  • Syntax: $ cat L3 -> enter
+	-> Hiii
+	-> We3 Members
+	-> How are you?
+
+  • Syntax: $ sed -i '2d' L3 -> enter				# permanently delete 2nd line
+	-> Hiii
+	-> How are you?
+
+  • Syntax: $ sed '1d;3d,5d;7d;9d' L2 -> enter		# temporarily delete multiple lines
+	-> My self Nitin Patil
+	-> Having 3 years of fake experience
+	-> Like Attract Like
+	-> Count your blessings
+	-> Always feel greatfull for what you have
+	-> Thinking Positive creates Positive thoughts
+	-> We always emmiting the energy to the surrounding
+	-> Hiii
+	-> We3 Members
+	-> How are you?
+
+  • Syntax: $ sed -i '1d;3d,5d;7d;9d' L2 -> enter		# permanently delete multiple lines
+	-> My self Nitin Patil
+	-> Having 3 years of fake experience
+	-> Like Attract Like
+	-> Count your blessings
+	-> Always feel greatfull for what you have
+	-> Thinking Positive creates Positive thoughts
+	-> We always emmiting the energy to the surrounding
+	-> Hiii
+	-> We3 Members
+	-> How are you?
+
+  • Syntax: $ sed '1,10d' L2 -> enter
+	-> Thinking Positive creates Positive thoughts
+	-> We always emmiting the energy to the surrounding
+	-> Hiii
+	-> We3 Members
+	-> How are you?
+
+  • Syntax: $ sed 's/Pune/Mumbai/g' -> s is Substitute and g is globally
+	< don't try this command >
+
+󀪃 awk - The awk command is used to fetch column wise data.
+
+  • Syntax: $ awk {'print $2'} <filename>
+
+  • Syntax: $ cat > L6 -> enter
+	-> Name		Age		City		Company
+	-> Nitin		26		Pune		Google
+	-> Neha		27		Mumbai	Apple
+	-> Ruchita	30		Goa		Meta
+	-> Ankita		27		Delhi		Amazon
+	-> Amruta	29		Surat	Neflix
+	(ctrl + d)
+
+  • Syntax: $ awk {'print $2'} L6 -> enter				# fetching 2nd column
+	-> Age
+	-> 26
+	-> 27
+	-> 30
+	-> 27
+	-> 29
+
+  • Syntax: $ awk {'print $2,$4'} L6 -> enter			# fetching 2nd and 4th column
+	-> Age	Company
+	-> 26	Google
+	-> 27	Apple
+	-> 30	Meta
+	-> 27	Amazon
+	-> 29	Netflix
+
+  • Syntax: $ awk 'NR > 2 && NR < 4' L6 -> enter		# fetching 3rd row
+	-> Neha		27		Mumbai		Apple
+
+󀪃 vi - The vi command is used to perform multiple operations like view, edit, copy-paste, cut-paste, delete, undo, replace etc.
+
+  • Syntax: $ vi L3 -> enter
+	Hiii
+	How are you?
+
+	~
+	~
+	.
+	.
+	.
+	~
+	~
+	"L3" 3L, 19C                   1,1           All
+	(to escape press -> Esc then type :wq! enter)
+
+  • Syntax: $ vi L3 -> enter				# now for editing
+	Hiii
+	How are you?
+
+	~
+	~
+	.
+	.
+	.
+	~
+	~
+	"L3" 3L, 19C                   4,1           All
+
+	-> press i for INSERT mode and move cursor over where we want edit
+	-> then escape 
+
+  • Syntax: $ vi L3 -> enter				# now for copy-paste 
+	Hiii
+	How are you?
+
+	~
+	~
+	.
+	.
+	.
+	~
+	~
+	"L3" 3L, 19C                   4,1           All
+
+	-> move cursor over very starting position of line which we want to copy and then press yy
+	-> press p where we want to paste this line
+
+	&
+
+	-> for copying multiple lines for example 5 lines
+	-> move cursor over very starting position of line which we want to copy and then press 5yy
+	-> press p where we want to paste this lines
+
+  • Syntax: $ vi L3 -> enter				# for deleting line, character, word
+	Hiii
+	How are you?
+
+	~
+	~
+	.
+	.
+	.
+	~
+	~
+	"L3" 3L, 19C                   4,1           All
+
+	-> move cursor over very starting position of line which we want to delete and press dd
+	-> to delete multiple lines type 3dd
+
+	&
+
+	-> to delete single character
+	-> move cursor over any character we want to delete and press x
+	-> to delete word, move cursor over very starting position of that word and press dw
+	-> press u to undo
+
+	&
+
+	-> to cut paste, press dd to cut and press pb to paste
+
+  • Syntax: $ vi L3 -> enter				# for replace
+	Hiii
+	How are you?
+
+	~
+	~
+	.
+	.
+	.
+	~
+	~
+	"L3" 3L, 19C                   4,1           All
+
+	-> to replace single character press r and then type character to replace it
+
+	&
+
+	-> to replace whole line press R and type whatever we want and replace line
+
+○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○
+
+10. Terminal
+
+󀪃 help 
+
+  • Syntax: $ help -> enter
+
+
+
+☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻☺☻
+
+
+
+
+
+
+
+
+
+
+
+
+
